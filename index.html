@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mírate MYH | Trajes a la medida</title>
+  <meta name="description" content="Trajes a la medida, vestuario para bodas, grados y ceremonias, smoking y vestidos para eventos, dotaciones empresariales y máquinas de ojales. Pide tu cotización por WhatsApp.">
+  <meta name="theme-color" content="#16100c">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:title" content="Mírate MYH | Trajes a la medida">
+  <meta property="og:description" content="Sastrería a la medida, bodas, grados, smoking y vestidos para eventos, dotaciones empresariales y máquinas de ojales. Cotiza por WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <!-- Pendiente: pasar a LocalBusiness cuando se confirmen dirección y ciudad. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mírate MYH",
+    "description": "Trajes a la medida, vestuario para bodas, grados y ceremonias, smoking y vestidos para eventos, dotaciones empresariales y máquinas de ojales.",
+    "telephone": "+573107650998",
+    "sameAs": ["https://www.instagram.com/modamirate/"]
+  }
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-sastreria" viewBox="0 0 24 24"><path d="M8 3l4 5 4-5 4 3-2 15H6L4 6l4-3Z"/><path d="M12 8v13"/></symbol>
+    <symbol id="i-eventos" viewBox="0 0 24 24"><path d="M3 8l7 3v2l-7 3V8Zm18 0l-7 3v2l7 3V8Z"/><rect x="10" y="10.5" width="4" height="3" rx="1"/></symbol>
+    <symbol id="i-vestido" viewBox="0 0 24 24"><path d="M9 3l3 3 3-3 1 6-2 3 5 9H5l5-9-2-3 1-6Z"/></symbol>
+    <symbol id="i-bodas" viewBox="0 0 24 24"><circle cx="9" cy="14" r="5"/><circle cx="15" cy="14" r="5"/><path d="M9.5 5.5 11 3.5l1 1.5 1-1.5 1.5 2"/></symbol>
+    <symbol id="i-grados" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5L2 9Z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 9v6"/></symbol>
+    <symbol id="i-dotaciones" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-4 3-6 6-6s6 2 6 6"/><path d="M15 14.5c3 0 6 1.5 6 5.5"/></symbol>
+    <symbol id="i-ojales" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="9.5" cy="10" r="1"/><circle cx="14.5" cy="10" r="1"/><circle cx="9.5" cy="14" r="1"/><circle cx="14.5" cy="14" r="1"/></symbol>
+  </svg>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <noscript><p class="nota-js">Para ver el catálogo y usar los formularios necesitas activar JavaScript. Mientras tanto, escríbenos por <a href="https://wa.me/573107650998" target="_blank" rel="noopener">WhatsApp</a>.</p></noscript>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a href="#inicio" class="marca" aria-label="Mírate MYH, inicio">
+        <img class="marca__logo" src="img/logo-cabecera.jpg" width="86" height="44" alt="">
+        <span class="marca__texto"><strong>Mírate MYH</strong><small>Trajes a la medida</small></span>
+      </a>
+      <nav class="menu" id="menu" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contáctenos</a>
+      </nav>
+      <button class="btn-consulta" id="abrirConsulta" type="button">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M6 3h12v18l-6-3-6 3V3Z"/></svg>
+        <span class="btn-consulta__texto">Carrito</span>
+        <span class="contador" id="contador" aria-hidden="true">0</span>
+      </button>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" data-wa="Hola, quisiera información sobre sus servicios.">
+      <div class="contenedor hero__fila">
+        <div class="hero__texto">
+          <p class="etiqueta">Trajes a la medida</p>
+          <h1>Elegancia hecha <em>a tu medida</em></h1>
+          <p class="hero__sub">Sastrería a la medida, vestuario para bodas y grados, smoking y vestidos para eventos, dotaciones empresariales y máquinas de ojales. Arma tu cotización y te respondemos por WhatsApp.</p>
+          <div class="hero__acciones">
+            <button class="btn btn--primario" type="button" data-abrir-asistente>Armar mi cotización</button>
+            <a class="btn btn--secundario" data-whatsapp href="https://wa.me/573107650998?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          </div>
+        </div>
+        <figure class="hero__visual">
+          <img src="img/hero-1200.jpg" srcset="img/hero-800.jpg 800w, img/hero-1200.jpg 1200w" sizes="(min-width: 900px) 460px, 90vw"
+               width="1200" height="1500" fetchpriority="high"
+               alt="Smoking marfil con solapa negra y chaleco cruzado sobre un maniquí, en una biblioteca de madera. Texto: Moda Mírate MYH.">
+        </figure>
+      </div>
+    </section>
+
+    <section class="seccion" id="servicios" data-wa="Hola, quisiera cotizar uno de sus servicios.">
+      <div class="contenedor">
+        <p class="etiqueta">Nuestras líneas</p>
+        <h2>¿Qué necesitas?</h2>
+        <p class="seccion__sub">Seis líneas para cada ocasión. Elige una y cuéntanos los detalles: los precios y la disponibilidad se confirman por WhatsApp.</p>
+        <div class="tarjetas">
+          <article class="tarjeta" id="linea-sastreria">
+            <p class="tarjeta__numero" aria-hidden="true">01</p>
+            <h3>Sastrería y trajes a la medida</h3>
+            <ul class="tarjeta__lista">
+              <li>Trajes a la medida</li>
+              <li>Asesoría para prendas personalizadas</li>
+            </ul>
+            <button class="btn btn--secundario" type="button" data-consultar="sastreria" aria-label="Consultar: Sastrería y trajes a la medida">Consultar</button>
+          </article>
+          <article class="tarjeta" id="linea-bodas">
+            <p class="tarjeta__numero" aria-hidden="true">02</p>
+            <h3>Bodas</h3>
+            <ul class="tarjeta__lista">
+              <li>Vestuario para novios</li>
+              <li>Trajes y smoking para bodas</li>
+              <li>Asesoría para ocasiones matrimoniales</li>
+            </ul>
+            <button class="btn btn--secundario" type="button" data-consultar="bodas" aria-label="Consultar: Bodas">Consultar</button>
+          </article>
+          <article class="tarjeta" id="linea-grados">
+            <p class="tarjeta__numero" aria-hidden="true">03</p>
+            <h3>Grados y ceremonias</h3>
+            <ul class="tarjeta__lista">
+              <li>Vestuario formal para grados</li>
+              <li>Prendas para ceremonias y ocasiones especiales</li>
+            </ul>
+            <button class="btn btn--secundario" type="button" data-consultar="grados" aria-label="Consultar: Grados y ceremonias">Consultar</button>
+          </article>
+          <article class="tarjeta" id="linea-eventos">
+            <p class="tarjeta__numero" aria-hidden="true">04</p>
+            <h3>Smoking y vestidos para eventos</h3>
+            <ul class="tarjeta__lista">
+              <li>Smoking — alquiler</li>
+              <li>Smoking — venta</li>
+              <li>Vestidos para eventos — alquiler</li>
+              <li>Vestidos para eventos — venta</li>
+            </ul>
+            <button class="btn btn--secundario" type="button" data-consultar="eventos" aria-label="Consultar: Smoking y vestidos para eventos">Consultar</button>
+          </article>
+          <article class="tarjeta" id="linea-dotaciones">
+            <p class="tarjeta__numero" aria-hidden="true">05</p>
+            <h3>Dotaciones empresariales</h3>
+            <ul class="tarjeta__lista">
+              <li>Soluciones de vestuario para empresas</li>
+              <li>Solicitudes de información y cotización empresarial</li>
+            </ul>
+            <button class="btn btn--secundario" type="button" data-consultar="dotaciones" aria-label="Consultar: Dotaciones empresariales">Consultar</button>
+          </article>
+          <article class="tarjeta" id="linea-ojales">
+            <p class="tarjeta__numero" aria-hidden="true">06</p>
+            <h3>Máquinas de ojales</h3>
+            <ul class="tarjeta__lista">
+              <li>Consultas sobre referencias, características y disponibilidad</li>
+              <li>Solicitudes de información y cotización por WhatsApp</li>
+            </ul>
+            <button class="btn btn--secundario" type="button" data-consultar="ojales" aria-label="Consultar: Máquinas de ojales">Consultar</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--clara" id="catalogo" data-wa="Hola, quisiera cotizar algunos productos del catálogo.">
+      <div class="contenedor">
+        <p class="etiqueta">Catálogo</p>
+        <h2>Elige y agrega a tu carrito</h2>
+        <p class="seccion__sub">Agrega lo que te interese y envía tu carrito por WhatsApp. Los precios y la disponibilidad se confirman allí.</p>
+        <div class="filtros" id="catalogoFiltros" role="group" aria-label="Filtrar el catálogo por línea"></div>
+        <div class="catalogo" id="catalogoRejilla"></div>
+      </div>
+    </section>
+
+    <section class="seccion" id="como-funciona">
+      <div class="contenedor">
+        <p class="etiqueta">Así de simple</p>
+        <h2>Cómo funciona</h2>
+        <ol class="pasos">
+          <li><span class="pasos__num">1</span><h3>Elige lo que necesitas</h3><p>Recorre el catálogo, las líneas o el asistente para decirnos qué buscas.</p></li>
+          <li><span class="pasos__num">2</span><h3>Arma tu carrito</h3><p>Agrega productos del catálogo o usa el asistente para sumar la fecha, la ocasión y los detalles que ya tengas.</p></li>
+          <li><span class="pasos__num">3</span><h3>Envíala por WhatsApp</h3><p>Se abre WhatsApp con tu solicitud lista. Allí te confirmamos precios y disponibilidad.</p></li>
+        </ol>
+        <p class="nota">Esta página no procesa pagos ni publica precios.</p>
+      </div>
+    </section>
+
+    <section class="seccion" id="nosotros">
+      <div class="contenedor nosotros">
+        <img class="nosotros__logo" src="img/logo-mirate.jpg" width="640" height="640" loading="lazy"
+             alt="Logotipo de M&amp;H Mírate: paños importados, diseños sobre medidas, dotaciones empresariales.">
+        <div>
+          <p class="etiqueta">Nosotros</p>
+          <h2>Diseños sobre medidas</h2>
+          <p>Mírate MYH reúne sastrería a la medida, vestuario para bodas y grados, smoking y vestidos para eventos, dotaciones empresariales y máquinas de ojales.</p>
+          <p>Cuéntanos lo que tienes en mente y lo armamos contigo por WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--contacto" id="contacto" aria-labelledby="contactoTitulo" data-wa="Hola, quisiera hablar con ustedes.">
+      <div class="contenedor contacto">
+        <div class="contacto__texto">
+          <h2 id="contactoTitulo">Contáctenos</h2>
+          <p class="contacto__intro">Cuéntanos qué necesitas y recibe atención personalizada por WhatsApp.</p>
+          <p>También puedes escribirnos directamente al <strong data-tel></strong> o seguirnos en Instagram <strong data-usuario-ig></strong>.</p>
+          <div class="contacto__acciones">
+            <a class="btn btn--secundario" data-whatsapp href="https://wa.me/573107650998?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+            <a class="btn btn--secundario" data-instagram href="https://www.instagram.com/modamirate/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+        <form class="formulario" id="formContacto" novalidate aria-label="Formulario de contacto">
+          <div class="campo">
+            <label for="c-nombre">Nombre *</label>
+            <input id="c-nombre" name="nombre" type="text" maxlength="80" autocomplete="name" required aria-describedby="ce-nombre">
+            <p class="campo__error" id="ce-nombre" hidden></p>
+          </div>
+          <div class="campo">
+            <label for="c-telefono">Teléfono (opcional)</label>
+            <input id="c-telefono" name="telefono" type="tel" maxlength="25" autocomplete="tel" inputmode="tel" aria-describedby="ce-telefono">
+            <p class="campo__error" id="ce-telefono" hidden></p>
+          </div>
+          <div class="campo">
+            <label for="c-tipo">Tipo de solicitud *</label>
+            <select id="c-tipo" name="tipo" required aria-describedby="ce-tipo"></select>
+            <p class="campo__error" id="ce-tipo" hidden></p>
+          </div>
+          <div class="campo">
+            <label for="c-linea">Línea comercial de interés *</label>
+            <select id="c-linea" name="linea" required aria-describedby="ce-linea"></select>
+            <p class="campo__error" id="ce-linea" hidden></p>
+          </div>
+          <div class="campo">
+            <label for="c-especifico">Producto o servicio específico (opcional)</label>
+            <select id="c-especifico" name="especifico" aria-describedby="ce-especifico"></select>
+            <p class="campo__error" id="ce-especifico" hidden></p>
+          </div>
+          <div class="campo">
+            <label for="c-mensaje">Mensaje (opcional)</label>
+            <textarea id="c-mensaje" name="mensaje" rows="4" maxlength="600" aria-describedby="ce-mensaje"></textarea>
+            <p class="campo__error" id="ce-mensaje" hidden></p>
+          </div>
+          <button class="btn btn--primario btn--ancho" type="submit">ENVIAR POR WHATSAPP</button>
+          <p class="nota">Tus datos no se guardan en esta página: solo se usan para preparar el mensaje que se abre en WhatsApp.</p>
+          <p class="formulario__estado" id="contactoEstado" role="status" hidden>
+            Se abrió WhatsApp con tu mensaje. Si no ocurrió, <a id="contactoEnlace" target="_blank" rel="noopener">ábrelo aquí</a>.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__fila">
+      <span>© <span id="anio"></span> Mírate MYH · Trajes a la medida</span>
+      <span><a data-instagram data-usuario-ig href="https://www.instagram.com/modamirate/" target="_blank" rel="noopener">@modamirate</a> · <a data-whatsapp data-tel href="https://wa.me/573107650998?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener">+57 310 765 0998</a></span>
+    </div>
+  </footer>
+
+  <!-- Formulario por línea comercial -->
+  <dialog class="modal" id="modal" aria-labelledby="modalTitulo">
+    <div class="modal__caja">
+      <button class="modal__cerrar" type="button" data-cerrar-modal aria-label="Cerrar">×</button>
+      <h2 id="modalTitulo"></h2>
+      <p class="modal__resumen" id="modalResumen"></p>
+      <form id="formCategoria" novalidate></form>
+    </div>
+  </dialog>
+
+  <div class="velo" id="velo" hidden></div>
+
+  <!-- Consulta (carrito de cotización) -->
+  <aside class="panel panel--consulta" id="consulta" role="dialog" aria-modal="true" aria-labelledby="consultaTitulo" inert>
+    <div class="panel__cabecera">
+      <h2 id="consultaTitulo">Mi carrito</h2>
+      <button class="modal__cerrar" type="button" data-cerrar-panel data-foco aria-label="Cerrar mi carrito">×</button>
+    </div>
+    <div class="panel__cuerpo" id="consultaLista"></div>
+    <div class="panel__pie">
+      <p class="panel__total" id="consultaTotal" hidden><span>Total</span><strong id="consultaTotalValor"></strong></p>
+      <div id="consultaContacto" class="contacto-datos" hidden>
+        <label for="contactoNombre">Tu nombre (opcional)</label>
+        <input id="contactoNombre" type="text" maxlength="60" autocomplete="name">
+        <label for="contactoCiudad">Tu ciudad (opcional)</label>
+        <input id="contactoCiudad" type="text" maxlength="60" autocomplete="address-level2">
+      </div>
+      <p class="nota">Se abrirá WhatsApp con tu solicitud lista. Los precios y la disponibilidad se confirman allí; esta página no hace pagos.</p>
+      <button class="btn btn--primario btn--ancho" id="enviarConsulta" type="button" disabled>Solicitar cotización por WhatsApp</button>
+      <button class="enlace" id="vaciarConsulta" type="button" hidden>Vaciar mi carrito</button>
+    </div>
+  </aside>
+
+  <!-- Asistente comercial -->
+  <aside class="panel panel--asistente" id="asistente" role="dialog" aria-modal="true" aria-labelledby="asistenteTitulo" inert>
+    <div class="panel__cabecera">
+      <h2 id="asistenteTitulo">Asistente Mírate MYH</h2>
+      <button class="enlace" id="reiniciarAsistente" type="button">Reiniciar</button>
+      <button class="modal__cerrar" type="button" data-cerrar-panel data-foco aria-label="Cerrar asistente">×</button>
+    </div>
+    <div class="asistente__log" id="asistenteLog" role="log" aria-live="polite"></div>
+    <div class="asistente__controles">
+      <div class="asistente__opciones" id="asistenteOpciones"></div>
+      <form class="asistente__form" id="asistenteForm" hidden>
+        <label class="solo-lectores" for="asistenteEntrada">Tu respuesta</label>
+        <input id="asistenteEntrada" type="text" maxlength="120" autocomplete="off">
+        <button class="btn btn--primario" type="submit">Enviar</button>
+        <button class="enlace" id="asistenteOmitir" type="button">Omitir</button>
+      </form>
+    </div>
+  </aside>
+
+  <button class="flotante flotante--asistente" type="button" data-abrir-asistente>Asistente</button>
+  <a class="flotante flotante--wa" id="waFlotante" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.600-1.200A9 9 0 1 0 12 3Z"/><circle cx="8.500" cy="12" r="1.100" fill="currentColor"/><circle cx="12" cy="12" r="1.100" fill="currentColor"/><circle cx="15.500" cy="12" r="1.100" fill="currentColor"/></svg>
+  </a>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/categorias.js"></script>
+  <script src="js/catalogo.js"></script>
+  <script src="js/consulta.js"></script>
+  <script src="js/contacto.js"></script>
+  <script src="js/asistente-datos.js"></script>
+  <script src="js/asistente.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
