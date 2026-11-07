@@ -137,7 +137,7 @@
       const subtotal = Consulta.subtotal(l);
       lista.append(el("article", { class: "linea" },
         el("div", { class: "linea__cuerpo" },
-          el("p", { class: "linea__cat", text: r.categoria }),
+          r.categoria === r.titulo ? "" : el("p", { class: "linea__cat", text: r.categoria }),
           el("h3", { text: r.titulo }),
           el("ul", {}, ...r.detalles.map(([e, v]) => el("li", { text: `${e}: ${v}` }))),
           el("div", { class: "linea__cantidad" },
@@ -196,7 +196,7 @@
           visual, p.etiqueta ? el("span", { class: "producto__etiqueta", text: p.etiqueta }) : ""),
         el("div", { class: "producto__info" },
           p.titulo ? "" : el("p", { class: "producto__cat", text: CATEGORIAS.find((c) => c.id === p.cat).corto }),
-          el("h3", p.titulo ? { class: "producto__titulo", text: p.titulo } : { text: p.nombre }),
+          el("h3", p.titulo ? { class: "producto__titulo", text: p.titulo } : { text: p.encabezado || p.nombre }),
           p.subtitulo ? el("p", { class: "producto__sub", text: p.subtitulo }) : "",
           el("p", { class: "producto__desc", text: p.descripcion }),
           el("button", { class: "btn btn--primario", type: "button", "data-producto": p.id,

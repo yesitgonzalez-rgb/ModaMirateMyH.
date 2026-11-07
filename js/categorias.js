@@ -46,7 +46,7 @@ const CATEGORIAS = [
   {
     id: "grados",
     numero: "03",
-    corto: "Grados",
+    corto: "Grados y ceremonias",
     titulo: "Grados y ceremonias",
     resumen: "Cuéntanos qué ceremonia es y para cuándo.",
     servicios: ["Vestuario formal para grados", "Prendas para ceremonias y ocasiones especiales"],

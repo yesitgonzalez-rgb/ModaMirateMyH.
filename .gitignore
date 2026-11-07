@@ -4,12 +4,6 @@
 ModaMirateMyH_backups/
 ModaMirateMyH_respaldo_*/
 
-# Fotos con personas y permiso de uso pendiente: no versionar
-img/catalogo/bodas-referencia.jpg
-img/catalogo/grados-ceremonias.jpg
-img/catalogo/vestidos-eventos.jpg
-img/catalogo/bodas-detalle.jpg
-
 # Informes internos (rutas locales, permisos y notas de trabajo)
 ESTADO_PROYECTO.md
 INVENTARIO_VISUAL.md

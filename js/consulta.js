@@ -129,7 +129,9 @@ const Consulta = (() => {
     ];
     lista.forEach((l, i) => {
       const r = resumen(l);
-      texto.push(`${i + 1}. ${r.categoria}: ${r.titulo} — Cantidad: ${l.cant || 1}`);
+      // Si la línea y el producto se llaman igual, el nombre va una sola vez.
+      const nombre = r.categoria === r.titulo ? r.titulo : `${r.categoria}: ${r.titulo}`;
+      texto.push(`${i + 1}. ${nombre} — Cantidad: ${l.cant || 1}`);
       if (precioUnidad(l) !== null) texto.push(`   - Precio por unidad: ${formatoPrecio(precioUnidad(l))}`);
       r.detalles.forEach(([etiqueta, valor]) => texto.push(`   - ${etiqueta}: ${valor}`));
       texto.push("");

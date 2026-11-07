@@ -117,7 +117,9 @@ const Asistente = (() => {
   function resumen() {
     const linea = { cat: estado.cat, datos: estado.datos };
     const r = Consulta.resumen(linea);
-    const texto = [`${r.categoria}: ${r.titulo}`, ...r.detalles.map(([e, v]) => `• ${e}: ${v}`)].join("\n");
+    // Si la línea y el producto se llaman igual, el nombre va una sola vez.
+    const nombre = r.categoria === r.titulo ? r.titulo : `${r.categoria}: ${r.titulo}`;
+    const texto = [nombre, ...r.detalles.map(([e, v]) => `• ${e}: ${v}`)].join("\n");
     burbuja("bot", "Este es el resumen de tu consulta:");
     burbuja("resumen", texto);
     mostrarOpciones([
